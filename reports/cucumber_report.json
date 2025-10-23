@@ -1,0 +1,209 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2322458900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "je me connecte sur l\u0027application",
+            "match": {
+              "location": "stepDefinitions.ConnexionStepDefinition.je_me_connecte_sur_l_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2819573600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "je saisis le username \"Admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinitions.ConnexionStepDefinition.je_saisis_le_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 352134900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "je saisis le password \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin123\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinitions.ConnexionStepDefinition.je_saisis_le_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 390691100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "je clique sur le bouton login",
+            "match": {
+              "location": "stepDefinitions.ConnexionStepDefinition.je_clique_sur_le_bouton_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2082900400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "je me redirige vers la page d\u0027acceuil et \"Dashboard\" s\u0027affiche",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dashboard\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.ConnexionStepDefinition.je_me_redirige_vers_la_page_d_acceuil_et_s_affiche(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-10-23T19:04:43.572Z",
+        "before": [
+          {
+            "result": {
+              "duration": 24108137700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "utils.Setup.setup()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "recherche par username",
+        "description": "",
+        "id": "recherche;recherche-par-username;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1230165200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "utils.Setup.embedScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1051325800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "je click sur le bouton admin",
+            "match": {
+              "location": "stepDefinitions.RechercheByUsernameStepDef.jeClickSurLeBoutonAdmin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1019732000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "je saisis le username souaite \"Admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.RechercheByUsernameStepDef.jeSaisisLeUsernameSouaite(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 394674300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "je click sur le bouton recherche",
+            "match": {
+              "location": "stepDefinitions.RechercheByUsernameStepDef.jeClickSurLeBoutonRecherche()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "je verifie les usernames affiches sur le tableau \"Admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 49
+                }
+              ],
+              "location": "stepDefinitions.RechercheByUsernameStepDef.jeVerifieLesUsernamesAffichesSurLeTableau(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@recherche"
+          },
+          {
+            "name": "@rechercheByUsername"
+          }
+        ]
+      }
+    ],
+    "name": "Recherche",
+    "description": "En tant qu\u0027admin je souhaite effectue une recherche par utilisateur",
+    "id": "recherche",
+    "keyword": "Feature",
+    "uri": "file:src/test/ressources/features/rechercheByUserName.feature",
+    "tags": [
+      {
+        "name": "@recherche",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
