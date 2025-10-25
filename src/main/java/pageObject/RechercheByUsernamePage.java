@@ -8,7 +8,7 @@ public class RechercheByUsernamePage {
 
 	//declaration des selecteurs
 	
-	public final static String ADMIN_BUTTON_XPATH = "//*[@id=\"app\"]/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a";
+	public final static String ADMIN_BUTTON_XPATH = "//aside[@class='oxd-sidepanel']//li[1]";
 	
 	public final static String USERNAME_FIELD_XPATH ="//div[@class='oxd-input-group oxd-input-field-bottom-space']//div//input[@class='oxd-input oxd-input--active']"; 
 	
@@ -30,17 +30,17 @@ public class RechercheByUsernamePage {
 	//definition des methodes
 	
 	public static void clickAdminBtn () {
-		//de preference on n'utilise pas this
+		
 		adminButton.click();
 	}
 	
 	public static void saisirsername (String username) {
-		//de preference on n'utilise pas this
+		
 		usernameField.sendKeys(username);
 	}
 	
 	public static void clickSearchBtn () {
-		//de preference on n'utilise pas this
+		
 		searchButton.click();
 	}
 	

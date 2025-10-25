@@ -13,7 +13,7 @@ public class ConnexionPage {
 	
 	public final static String BTNLOGIN_XPATH ="//button[@type='submit']";
 	
-	public final static String ELM_DASH_XPATH ="//*[@id=\"app\"]/div[1]/div[1]/header/div[1]/div[1]/span/h6";
+	public final static String ELM_DASH_XPATH ="//span[@class='oxd-topbar-header-breadcrumb']";
 	
 	public final static String MSG_ERREUR_XPATH ="//p[@class='oxd-text oxd-text--p oxd-alert-content-text']";
 	

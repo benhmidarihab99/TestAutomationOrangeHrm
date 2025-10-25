@@ -24,7 +24,7 @@ public class RechercheByUsernameStepDef {
 
 	@When("je click sur le bouton admin")
 	public void jeClickSurLeBoutonAdmin() {
-	    wait.explicitWaitUntilButtonIsClickableXpath(driver, RechercheByUsernamePage.ADMIN_BUTTON_XPATH, 10);
+	    wait.explicitWaitUntilButtonIsClickableXpath(driver, RechercheByUsernamePage.ADMIN_BUTTON_XPATH, 15);
 	    RechercheByUsernamePage.clickAdminBtn();
 	}
 	@When("je saisis le username souaite {string}")
