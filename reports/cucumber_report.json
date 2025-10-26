@@ -3,18 +3,42 @@
     "line": 2,
     "elements": [
       {
-        "line": 6,
-        "name": "",
+        "start_timestamp": "2025-10-26T08:34:34.762Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2219383000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "utils.Setup.setup()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "authentification avec des identifiants valides",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
+        "id": "authentification;authentification-avec-des-identifiants-valides",
+        "after": [
+          {
+            "result": {
+              "duration": 263910800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "utils.Setup.embedScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 3551321500,
+              "duration": 600331800,
               "status": "passed"
             },
-            "line": 7,
+            "line": 9,
             "name": "je me connecte sur l\u0027application",
             "match": {
               "location": "stepDefinitions.ConnexionStepDefinition.je_me_connecte_sur_l_application()"
@@ -23,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 1173292300,
+              "duration": 2211902200,
               "status": "passed"
             },
-            "line": 8,
+            "line": 10,
             "name": "je saisis le username \"Admin\"",
             "match": {
               "arguments": [
@@ -41,15 +65,15 @@
           },
           {
             "result": {
-              "duration": 161608700,
+              "duration": 174464800,
               "status": "passed"
             },
-            "line": 9,
-            "name": "je saisis le password \"Admin123++*/\"",
+            "line": 11,
+            "name": "je saisis le password \"admin123\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Admin123++*/\"",
+                  "val": "\"admin123\"",
                   "offset": 22
                 }
               ],
@@ -59,10 +83,10 @@
           },
           {
             "result": {
-              "duration": 141275500,
+              "duration": 137022600,
               "status": "passed"
             },
-            "line": 10,
+            "line": 12,
             "name": "je clique sur le bouton login",
             "match": {
               "location": "stepDefinitions.ConnexionStepDefinition.je_clique_sur_le_bouton_login()"
@@ -71,10 +95,10 @@
           },
           {
             "result": {
-              "duration": 2260529800,
+              "duration": 1551176400,
               "status": "passed"
             },
-            "line": 11,
+            "line": 13,
             "name": "je me redirige vers la page d\u0027acceuil et \"Dashboard\" s\u0027affiche",
             "match": {
               "arguments": [
@@ -87,14 +111,22 @@
             },
             "keyword": "Then "
           }
+        ],
+        "tags": [
+          {
+            "name": "@connexion"
+          },
+          {
+            "name": "@connexionValide"
+          }
         ]
       },
       {
-        "start_timestamp": "2025-10-25T18:52:22.924Z",
+        "start_timestamp": "2025-10-26T08:34:42.039Z",
         "before": [
           {
             "result": {
-              "duration": 2339540400,
+              "duration": 888261100,
               "status": "passed"
             },
             "match": {
@@ -102,14 +134,14 @@
             }
           }
         ],
-        "line": 22,
-        "name": "recherche par username",
+        "line": 25,
+        "name": "Authentification avec des identifiants non valides",
         "description": "",
-        "id": "recherche;recherche-par-username;;2",
+        "id": "authentification;authentification-avec-des-identifiants-non-valides;;2",
         "after": [
           {
             "result": {
-              "duration": 365236900,
+              "duration": 308217800,
               "status": "passed"
             },
             "match": {
@@ -122,82 +154,696 @@
         "steps": [
           {
             "result": {
-              "duration": 2246307800,
+              "duration": 1963620300,
               "status": "passed"
             },
-            "line": 15,
-            "name": "je click sur le bouton admin",
+            "line": 17,
+            "name": "je me connecte sur l\u0027application",
             "match": {
-              "location": "stepDefinitions.RechercheByUsernameStepDef.jeClickSurLeBoutonAdmin()"
+              "location": "stepDefinitions.ConnexionStepDefinition.je_me_connecte_sur_l_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 659944900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "je saisis le username \"Rihab\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Rihab\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinitions.ConnexionStepDefinition.je_saisis_le_username(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 617341500,
+              "duration": 138515100,
               "status": "passed"
             },
-            "line": 16,
-            "name": "je saisis le username souaite \"Admin\"",
+            "line": 19,
+            "name": "je saisis le password \"admin123\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Admin\"",
-                  "offset": 30
+                  "val": "\"admin123\"",
+                  "offset": 22
                 }
               ],
-              "location": "stepDefinitions.RechercheByUsernameStepDef.jeSaisisLeUsernameSouaite(java.lang.String)"
+              "location": "stepDefinitions.ConnexionStepDefinition.je_saisis_le_password(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 129410200,
+              "duration": 128677400,
               "status": "passed"
             },
-            "line": 17,
-            "name": "je click sur le bouton recherche",
+            "line": 20,
+            "name": "je clique sur le bouton login",
             "match": {
-              "location": "stepDefinitions.RechercheByUsernameStepDef.jeClickSurLeBoutonRecherche()"
+              "location": "stepDefinitions.ConnexionStepDefinition.je_clique_sur_le_bouton_login()"
             },
             "keyword": "And "
           },
           {
             "result": {
+              "duration": 1105929500,
               "status": "passed"
             },
-            "line": 18,
-            "name": "je verifie les usernames affiches sur le tableau \"Admin\"",
+            "line": 21,
+            "name": "je verifie le message d\u0027erreur affiche \"Invalid credentials\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Admin\"",
-                  "offset": 49
+                  "val": "\"Invalid credentials\"",
+                  "offset": 39
                 }
               ],
-              "location": "stepDefinitions.RechercheByUsernameStepDef.jeVerifieLesUsernamesAffichesSurLeTableau(java.lang.String)"
+              "location": "stepDefinitions.ConnexionStepDefinition.jeVerifieLeMessageDErreurAffiche(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@recherche"
+            "name": "@connexion"
           },
           {
-            "name": "@rechercheByUsername"
+            "name": "@connexionInvalide"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-10-26T08:34:47.252Z",
+        "before": [
+          {
+            "result": {
+              "duration": 867508500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "utils.Setup.setup()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Authentification avec des identifiants non valides",
+        "description": "",
+        "id": "authentification;authentification-avec-des-identifiants-non-valides;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 344703700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "utils.Setup.embedScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1971332700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "je me connecte sur l\u0027application",
+            "match": {
+              "location": "stepDefinitions.ConnexionStepDefinition.je_me_connecte_sur_l_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1166713500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "je saisis le username \"Admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinitions.ConnexionStepDefinition.je_saisis_le_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 119805900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "je saisis le password \"admin12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin12\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinitions.ConnexionStepDefinition.je_saisis_le_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 135876100,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "je clique sur le bouton login",
+            "match": {
+              "location": "stepDefinitions.ConnexionStepDefinition.je_clique_sur_le_bouton_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1395589600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "je verifie le message d\u0027erreur affiche \"Invalid credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid credentials\"",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefinitions.ConnexionStepDefinition.jeVerifieLeMessageDErreurAffiche(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@connexion"
+          },
+          {
+            "name": "@connexionInvalide"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-10-26T08:34:53.275Z",
+        "before": [
+          {
+            "result": {
+              "duration": 860609100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "utils.Setup.setup()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Authentification avec des identifiants non valides",
+        "description": "",
+        "id": "authentification;authentification-avec-des-identifiants-non-valides;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 253577800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "utils.Setup.embedScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1971672700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "je me connecte sur l\u0027application",
+            "match": {
+              "location": "stepDefinitions.ConnexionStepDefinition.je_me_connecte_sur_l_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 639607700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "je saisis le username \"Admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinitions.ConnexionStepDefinition.je_saisis_le_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 127487400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "je saisis le password \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinitions.ConnexionStepDefinition.je_saisis_le_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 136776300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "je clique sur le bouton login",
+            "match": {
+              "location": "stepDefinitions.ConnexionStepDefinition.je_clique_sur_le_bouton_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 120863700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "je verifie le message d\u0027erreur affiche \"Required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Required\"",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefinitions.ConnexionStepDefinition.jeVerifieLeMessageDErreurAffiche(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@connexion"
+          },
+          {
+            "name": "@connexionInvalide"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-10-26T08:34:57.403Z",
+        "before": [
+          {
+            "result": {
+              "duration": 874269500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "utils.Setup.setup()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "Authentification avec des identifiants non valides",
+        "description": "",
+        "id": "authentification;authentification-avec-des-identifiants-non-valides;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 241440500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "utils.Setup.embedScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2067915400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "je me connecte sur l\u0027application",
+            "match": {
+              "location": "stepDefinitions.ConnexionStepDefinition.je_me_connecte_sur_l_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 627109300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "je saisis le username \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinitions.ConnexionStepDefinition.je_saisis_le_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 150485000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "je saisis le password \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin123\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinitions.ConnexionStepDefinition.je_saisis_le_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 138638600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "je clique sur le bouton login",
+            "match": {
+              "location": "stepDefinitions.ConnexionStepDefinition.je_clique_sur_le_bouton_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 113986300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "je verifie le message d\u0027erreur affiche \"Required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Required\"",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefinitions.ConnexionStepDefinition.jeVerifieLeMessageDErreurAffiche(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@connexion"
+          },
+          {
+            "name": "@connexionInvalide"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-10-26T08:35:01.633Z",
+        "before": [
+          {
+            "result": {
+              "duration": 795718600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "utils.Setup.setup()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "Authentification avec des identifiants non valides",
+        "description": "",
+        "id": "authentification;authentification-avec-des-identifiants-non-valides;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 311763800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "utils.Setup.embedScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2134925600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "je me connecte sur l\u0027application",
+            "match": {
+              "location": "stepDefinitions.ConnexionStepDefinition.je_me_connecte_sur_l_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 641277600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "je saisis le username \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinitions.ConnexionStepDefinition.je_saisis_le_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 187492700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "je saisis le password \"Admin1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin1\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinitions.ConnexionStepDefinition.je_saisis_le_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 130639300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "je clique sur le bouton login",
+            "match": {
+              "location": "stepDefinitions.ConnexionStepDefinition.je_clique_sur_le_bouton_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1419109500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "je verifie le message d\u0027erreur affiche \"Invalid credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid credentials\"",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefinitions.ConnexionStepDefinition.jeVerifieLeMessageDErreurAffiche(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@connexion"
+          },
+          {
+            "name": "@connexionInvalide"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-10-26T08:35:07.264Z",
+        "before": [
+          {
+            "result": {
+              "duration": 878558600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "utils.Setup.setup()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Authentification avec des identifiants non valides",
+        "description": "",
+        "id": "authentification;authentification-avec-des-identifiants-non-valides;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 245248300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "utils.Setup.embedScreenshot(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2029003500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "je me connecte sur l\u0027application",
+            "match": {
+              "location": "stepDefinitions.ConnexionStepDefinition.je_me_connecte_sur_l_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 673213500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "je saisis le username \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinitions.ConnexionStepDefinition.je_saisis_le_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 138535500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "je saisis le password \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinitions.ConnexionStepDefinition.je_saisis_le_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 139925400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "je clique sur le bouton login",
+            "match": {
+              "location": "stepDefinitions.ConnexionStepDefinition.je_clique_sur_le_bouton_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 94813500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "je verifie le message d\u0027erreur affiche \"Required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Required\"",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefinitions.ConnexionStepDefinition.jeVerifieLeMessageDErreurAffiche(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@connexion"
+          },
+          {
+            "name": "@connexionInvalide"
           }
         ]
       }
     ],
-    "name": "Recherche",
-    "description": "En tant qu\u0027admin je souhaite effectue une recherche par utilisateur",
-    "id": "recherche",
+    "name": "Authentification",
+    "description": "en tant qu\u0027un administrateur je veux m\u0027authentifier sur l\u0027application Orange Hrm",
+    "id": "authentification",
     "keyword": "Feature",
-    "uri": "file:src/test/ressources/features/rechercheByUserName.feature",
+    "uri": "file:src/test/ressources/features/authentification.feature",
     "tags": [
       {
-        "name": "@recherche",
+        "name": "@connexion",
         "type": "Tag",
         "location": {
           "line": 1,
