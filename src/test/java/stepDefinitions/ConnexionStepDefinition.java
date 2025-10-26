@@ -46,7 +46,7 @@ public class ConnexionStepDefinition {
 	@When("je saisis le password {string}")
 	public void je_saisis_le_password(String password) {
 	    
-		wait.explicitWaitUntilVisibilityOfElementXpath(driver, pageObject.PASSWORD_XPATH, 10);
+		wait.explicitWaitUntilVisibilityOfElementXpath(driver, pageObject.PASSWORD_XPATH, 20);
 		pageObject.saisir_password(password);
 	}
 	
@@ -61,7 +61,7 @@ public class ConnexionStepDefinition {
 	@Then("je me redirige vers la page d'acceuil et {string} s'affiche")
 	public void je_me_redirige_vers_la_page_d_acceuil_et_s_affiche(String msgAtt) {
 		
-		wait.explicitWaitUntilVisibilityOfElementXpath(driver, pageObject.ELM_DASH_XPATH, 10);
+		wait.explicitWaitUntilVisibilityOfElementXpath(driver, pageObject.ELM_DASH_XPATH, 20);
 		Assert.assertEquals(pageObject.get_obtenu(),msgAtt);
 	}
 	

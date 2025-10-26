@@ -8,7 +8,7 @@ Scenario: authentification avec des identifiants valides
 
 Given je me connecte sur l'application
 When je saisis le username "Admin"
-And je saisis le password "admin123"
+And je saisis le password "Admin123++*/"
 And je clique sur le bouton login
 Then je me redirige vers la page d'acceuil et "Dashboard" s'affiche
 
@@ -22,10 +22,10 @@ Then je verifie le message d'erreur affiche "<messageErreur>"
 
 Examples:
 |name|pass|messageErreur|
-|Rihab|admin123|Invalid credentials|
+|Rihab|Admin123++*/|Invalid credentials|
 |Admin|admin12|Invalid credentials|
 |Admin||Required|
-||admin123|Required|
+||Admin123++*/|Required|
 |admin|Admin1|Invalid credentials|
 |||Required|
 
