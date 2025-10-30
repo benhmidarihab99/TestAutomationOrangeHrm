@@ -15,7 +15,7 @@ public class RechercheByUserRolePage {
 
 	public final static String ROLE_FIELD_XPATH = "//*[@id=\"app\"]/div[2]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[2]/div/div[2]/div/div";
 
-	public final static String ESS_ROLE_XPATH = "//*[@id=\"app\"]/div[2]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[2]/div/div[2]/div/div/div[1]";
+	public final static String ESS_ROLE_XPATH = "//*[@id=\"app\"]/div[2]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[2]/div/div[2]/div/div[2]/div[3]";
 
 	public final static String SEARCH_TABLE_CLASS = "oxd-table-card";
 
@@ -31,22 +31,24 @@ public class RechercheByUserRolePage {
 	@FindBy(how = How.CLASS_NAME, using = SEARCH_TABLE_CLASS)
 	public static List<WebElement> liste;
 
-	public static void selectRole(WebDriver driver, String role) throws InterruptedException {
-
+	
+	public static void selectRole() {
+		
 		userRoleSelect.click();
+	}
+	
+	public static void selectListeRole(WebDriver driver, String role) {
+
 
 		String roleXpath = "//div[@role='option' and normalize-space()='" + role + "']";
 
-		new org.openqa.selenium.support.ui.WebDriverWait(driver, java.time.Duration.ofSeconds(10)).until(
-				org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated(By.xpath(roleXpath)));
-
-		// Click the desired role
 		WebElement roleElement = driver.findElement(By.xpath(roleXpath));
 		roleElement.click();
 		
-		Thread.sleep(10000);
 
 	}
+	
+	
 
 	public static List<String> getListUserRole(WebDriver driver) {
 

@@ -25,15 +25,19 @@ public class RechercheByUserRoleStepDef {
 	
 
 	@When("je saisis le role souaite {string}")
-	public void jeSaisisLeRoleSouaite(String role) throws InterruptedException {
+	public void jeSaisisLeRoleSouaite(String role) {
 		
 		wait.explicitWaitUntilPresenceOfElementLocatedXpath(driver, RechercheByUserRolePage.ROLE_FIELD_XPATH, 10);
-		wait.explicitWaitUntilPresenceOfElementLocatedXpath(driver, RechercheByUserRolePage.ESS_ROLE_XPATH, 10);
-		RechercheByUserRolePage.selectRole(driver, role);
+		
+		RechercheByUserRolePage.selectRole();
+		
+		wait.explicitWaitUntilButtonIsClickableXpath(driver, RechercheByUserRolePage.ESS_ROLE_XPATH, 10);
+		
+		RechercheByUserRolePage.selectListeRole(driver, role);
+		
 
 	}
 	
-
 	@Then("je verifie les role affiches sur le tableau {string}")
 	public void jeVerifieLesRoleAffichesSurLeTableau(String resultatAttendu) {
 

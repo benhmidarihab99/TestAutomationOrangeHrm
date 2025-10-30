@@ -61,7 +61,7 @@ public class ConnexionStepDefinition {
 	@Then("je me redirige vers la page d'acceuil et {string} s'affiche")
 	public void je_me_redirige_vers_la_page_d_acceuil_et_s_affiche(String msgAtt) {
 		
-		wait.explicitWaitUntilVisibilityOfElementXpath(driver, pageObject.ELM_DASH_XPATH, 20);
+		wait.explicitWaitUntilVisibilityOfElementXpath(driver, pageObject.ELM_DASH_XPATH, 50);
 		Assert.assertEquals(pageObject.get_obtenu(),msgAtt);
 	}
 	

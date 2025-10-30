@@ -57,6 +57,10 @@ public class WaitMethods {
         return wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator)));
     }
 
+    public WebElement explicitWaitUntilPresenceOfElementLocatedclass(WebDriver driver, String locator, long seconds) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(seconds));
+        return wait.until(ExpectedConditions.presenceOfElementLocated(By.className(locator)));
+    }
  
      // Attente explicite jusqu'à la présence d'un élément localisé par un sélecteur CSS dans le DOM.
    
