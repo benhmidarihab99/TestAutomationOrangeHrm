@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 
 @CucumberOptions(
 	features= "src/test/ressources/features",
-	tags= "@recherche",
+	tags= "@rechercheByEmployeName",
 	glue= 
 		{ 
 			"stepDefinitions",

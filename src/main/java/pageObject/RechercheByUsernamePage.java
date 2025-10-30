@@ -50,11 +50,10 @@ public class RechercheByUsernamePage {
 		usernameField.sendKeys(username);
 	}
 
-	public static void clickSearchBtn() throws InterruptedException {
+	public static void clickSearchBtn(){
 
 		searchButton.click();
 		
-		Thread.sleep(5000);
 	}
 
 	public static List<String> getListUsername(WebDriver driver) {

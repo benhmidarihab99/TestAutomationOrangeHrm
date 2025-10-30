@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3281599200,
+              "duration": 3911744400,
               "status": "passed"
             },
             "line": 7,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 1737669700,
+              "duration": 1103029700,
               "status": "passed"
             },
             "line": 8,
@@ -41,7 +41,7 @@
           },
           {
             "result": {
-              "duration": 132182100,
+              "duration": 78579600,
               "status": "passed"
             },
             "line": 9,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 137743800,
+              "duration": 67066000,
               "status": "passed"
             },
             "line": 10,
@@ -71,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 2395155400,
+              "duration": 2362835700,
               "status": "passed"
             },
             "line": 11,
@@ -90,11 +90,11 @@
         ]
       },
       {
-        "start_timestamp": "2025-10-26T17:42:05.595Z",
+        "start_timestamp": "2025-10-29T20:22:22.827Z",
         "before": [
           {
             "result": {
-              "duration": 2221387500,
+              "duration": 1556826200,
               "status": "passed"
             },
             "match": {
@@ -103,13 +103,13 @@
           }
         ],
         "line": 22,
-        "name": "recherche par username",
+        "name": "recherche par employe name",
         "description": "",
-        "id": "recherche;recherche-par-username;;2",
+        "id": "recherche;recherche-par-employe-name;;2",
         "after": [
           {
             "result": {
-              "duration": 321090500,
+              "duration": 191509700,
               "status": "passed"
             },
             "match": {
@@ -118,11 +118,11 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1812041900,
+              "duration": 1176058000,
               "status": "passed"
             },
             "line": 15,
@@ -134,25 +134,25 @@
           },
           {
             "result": {
-              "duration": 637016100,
+              "duration": 2184826700,
               "status": "passed"
             },
             "line": 16,
-            "name": "je saisis le username souaite \"Admin\"",
+            "name": "je saisis le l\u0027employe name souaite \"benhmidar benhmidar\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Admin\"",
-                  "offset": 30
+                  "val": "\"benhmidar benhmidar\"",
+                  "offset": 36
                 }
               ],
-              "location": "stepDefinitions.RechercheByUsernameStepDef.jeSaisisLeUsernameSouaite(java.lang.String)"
+              "location": "stepDefinitions.RechercheByEmployeNameStepDef.jeSaisisLeLEmployeNameSouaite(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 5165645200,
+              "duration": 74807100,
               "status": "passed"
             },
             "line": 17,
@@ -164,19 +164,19 @@
           },
           {
             "result": {
-              "duration": 70941800,
+              "duration": 15383100,
               "status": "passed"
             },
             "line": 18,
-            "name": "je verifie les usernames affiches sur le tableau \"Admin\"",
+            "name": "je verifie le employe name affiche sur le tableau \"benhmidar benhmidar\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Admin\"",
-                  "offset": 49
+                  "val": "\"benhmidar benhmidar\"",
+                  "offset": 50
                 }
               ],
-              "location": "stepDefinitions.RechercheByUsernameStepDef.jeVerifieLesUsernamesAffichesSurLeTableau(java.lang.String)"
+              "location": "stepDefinitions.RechercheByEmployeNameStepDef.jeVerifieLeEmployeNameAfficheSurLeTableau(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -186,215 +186,7 @@
             "name": "@recherche"
           },
           {
-            "name": "@rechercheByUsername"
-          }
-        ]
-      }
-    ],
-    "name": "Recherche",
-    "description": "En tant qu\u0027admin je souhaite effectue une recherche par utilisateur",
-    "id": "recherche",
-    "keyword": "Feature",
-    "uri": "file:src/test/ressources/features/rechercheByUserName.feature",
-    "tags": [
-      {
-        "name": "@recherche",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "line": 6,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 6413988700,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "je me connecte sur l\u0027application",
-            "match": {
-              "location": "stepDefinitions.ConnexionStepDefinition.je_me_connecte_sur_l_application()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1674940700,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "je saisis le username \"Admin\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Admin\"",
-                  "offset": 22
-                }
-              ],
-              "location": "stepDefinitions.ConnexionStepDefinition.je_saisis_le_username(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 143450500,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "je saisis le password \"Admin123++*/\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Admin123++*/\"",
-                  "offset": 22
-                }
-              ],
-              "location": "stepDefinitions.ConnexionStepDefinition.je_saisis_le_password(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 147410600,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "je clique sur le bouton login",
-            "match": {
-              "location": "stepDefinitions.ConnexionStepDefinition.je_clique_sur_le_bouton_login()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2259763700,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "je me redirige vers la page d\u0027acceuil et \"Dashboard\" s\u0027affiche",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Dashboard\"",
-                  "offset": 41
-                }
-              ],
-              "location": "stepDefinitions.ConnexionStepDefinition.je_me_redirige_vers_la_page_d_acceuil_et_s_affiche(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2025-10-26T17:42:23.638Z",
-        "before": [
-          {
-            "result": {
-              "duration": 870031100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "utils.Setup.setup()"
-            }
-          }
-        ],
-        "line": 22,
-        "name": "recherche par user role",
-        "description": "",
-        "id": "recherche;recherche-par-user-role;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 331225400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "utils.Setup.embedScreenshot(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2146177400,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "je click sur le bouton admin",
-            "match": {
-              "location": "stepDefinitions.RechercheByUsernameStepDef.jeClickSurLeBoutonAdmin()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 10847533300,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "je saisis le role souaite \"ESS\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ESS\"",
-                  "offset": 26
-                }
-              ],
-              "location": "stepDefinitions.RechercheByUserRoleStepDef.jeSaisisLeRoleSouaite(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5119176900,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "je click sur le bouton recherche",
-            "match": {
-              "location": "stepDefinitions.RechercheByUsernameStepDef.jeClickSurLeBoutonRecherche()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 60080900,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "je verifie les role affiches sur le tableau \"ESS\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ESS\"",
-                  "offset": 44
-                }
-              ],
-              "location": "stepDefinitions.RechercheByUserRoleStepDef.jeVerifieLesRoleAffichesSurLeTableau(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@recherche"
-          },
-          {
-            "name": "@rechercheByUserRole"
+            "name": "@rechercheByEmployeName"
           }
         ]
       },
@@ -407,7 +199,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5989796600,
+              "duration": 3709412000,
               "status": "passed"
             },
             "line": 7,
@@ -419,7 +211,7 @@
           },
           {
             "result": {
-              "duration": 1260830400,
+              "duration": 1086529400,
               "status": "passed"
             },
             "line": 8,
@@ -437,7 +229,7 @@
           },
           {
             "result": {
-              "duration": 147484000,
+              "duration": 65530000,
               "status": "passed"
             },
             "line": 9,
@@ -455,7 +247,7 @@
           },
           {
             "result": {
-              "duration": 137419500,
+              "duration": 66568800,
               "status": "passed"
             },
             "line": 10,
@@ -467,7 +259,7 @@
           },
           {
             "result": {
-              "duration": 2650110300,
+              "duration": 2353595100,
               "status": "passed"
             },
             "line": 11,
@@ -486,11 +278,11 @@
         ]
       },
       {
-        "start_timestamp": "2025-10-26T17:42:53.668Z",
+        "start_timestamp": "2025-10-29T20:22:35.642Z",
         "before": [
           {
             "result": {
-              "duration": 842920700,
+              "duration": 643354900,
               "status": "passed"
             },
             "match": {
@@ -499,13 +291,13 @@
           }
         ],
         "line": 23,
-        "name": "recherche par user role",
+        "name": "recherche par employe name",
         "description": "",
-        "id": "recherche;recherche-par-user-role;;3",
+        "id": "recherche;recherche-par-employe-name;;3",
         "after": [
           {
             "result": {
-              "duration": 327945100,
+              "duration": 179574000,
               "status": "passed"
             },
             "match": {
@@ -514,11 +306,11 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2494818700,
+              "duration": 1516132900,
               "status": "passed"
             },
             "line": 15,
@@ -530,25 +322,25 @@
           },
           {
             "result": {
-              "duration": 10854770500,
+              "duration": 12959739800,
               "status": "passed"
             },
             "line": 16,
-            "name": "je saisis le role souaite \"Admin\"",
+            "name": "je saisis le l\u0027employe name souaite \"rihab\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Admin\"",
-                  "offset": 26
+                  "val": "\"rihab\"",
+                  "offset": 36
                 }
               ],
-              "location": "stepDefinitions.RechercheByUserRoleStepDef.jeSaisisLeRoleSouaite(java.lang.String)"
+              "location": "stepDefinitions.RechercheByEmployeNameStepDef.jeSaisisLeLEmployeNameSouaite(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 5131431800,
+              "duration": 80520500,
               "status": "passed"
             },
             "line": 17,
@@ -560,19 +352,19 @@
           },
           {
             "result": {
-              "duration": 96259000,
+              "duration": 60099300,
               "status": "passed"
             },
             "line": 18,
-            "name": "je verifie les role affiches sur le tableau \"Admin\"",
+            "name": "je verifie le employe name affiche sur le tableau \"Invalid\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Admin\"",
-                  "offset": 44
+                  "val": "\"Invalid\"",
+                  "offset": 50
                 }
               ],
-              "location": "stepDefinitions.RechercheByUserRoleStepDef.jeVerifieLesRoleAffichesSurLeTableau(java.lang.String)"
+              "location": "stepDefinitions.RechercheByEmployeNameStepDef.jeVerifieLeEmployeNameAfficheSurLeTableau(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -582,16 +374,16 @@
             "name": "@recherche"
           },
           {
-            "name": "@rechercheByUserRole"
+            "name": "@rechercheByEmployeName"
           }
         ]
       }
     ],
     "name": "Recherche",
-    "description": "En tant qu\u0027admin je souhaite effectue une recherche par role d\u0027utilisateur",
+    "description": "En tant qu\u0027admin je souhaite effectue une recherche par nom d\u0027employe",
     "id": "recherche",
     "keyword": "Feature",
-    "uri": "file:src/test/ressources/features/rechercheByUserRole.feature",
+    "uri": "file:src/test/ressources/features/rechercheByEmployeeName.feature",
     "tags": [
       {
         "name": "@recherche",
