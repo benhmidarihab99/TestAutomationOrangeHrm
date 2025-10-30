@@ -6,7 +6,8 @@ This project is a comprehensive automated testing suite for the **OrangeHRM** we
 ## Tested Features
 - **User Login:** Validates login functionality for different users.  
 - **User Search by Username:** Verifies that administrators can search for users by username and see the correct results in the table.  
-- **User Search by Role:** Verifies that administrators can filter users based on their role (e.g., ESS, Admin) and see the correct results.  
+- **User Search by Role:** Verifies that administrators can filter users based on their role (e.g., ESS, Admin) and see the correct results.
+- **User Search by Employe name:** 
 - **Navigation & UI Actions:** Includes interactions with buttons, dropdowns, and tables throughout the OrangeHRM interface.
 
 ## Framework Details
