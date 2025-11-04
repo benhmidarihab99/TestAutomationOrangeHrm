@@ -36,18 +36,20 @@ public class RechercheByUsernameStepDef {
 	    RechercheByUsernamePage.clickAdminBtn();
 	}
 	@When("je saisis le username souaite {string}")
-	public void jeSaisisLeUsernameSouaite(String name) {
+	public void jeSaisisLeUsernameSouaite(String name) throws InterruptedException {
 	    wait.explicitWaitUntilPresenceOfElementLocatedXpath(driver, RechercheByUsernamePage.USERNAME_FIELD_XPATH, 10);
 	    RechercheByUsernamePage.saisirsername(name);
+	    
 	}
 	
 	
 	@When("je click sur le bouton recherche")
 	public void jeClickSurLeBoutonRecherche() throws InterruptedException {
+		
 		wait.explicitWaitUntilButtonIsClickableXpath(driver, RechercheByUsernamePage.SEARCH_BUTTON_XPATH, 10);
 		RechercheByUsernamePage.clickSearchBtn();
 		
-	    
+	   
 	}
 	
 	

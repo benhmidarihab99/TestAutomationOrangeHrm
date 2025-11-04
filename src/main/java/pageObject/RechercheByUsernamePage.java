@@ -45,14 +45,18 @@ public class RechercheByUsernamePage {
 		adminButton.click();
 	}
 
-	public static void saisirsername(String username) {
+	public static void saisirsername(String username)throws InterruptedException {
 
 		usernameField.sendKeys(username);
+		
+		//Thread.sleep(5000);
 	}
 
-	public static void clickSearchBtn(){
+	public static void clickSearchBtn()  throws InterruptedException {
 
 		searchButton.click();
+		
+		// Thread.sleep(5000);
 		
 	}
 

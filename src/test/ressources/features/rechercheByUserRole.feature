@@ -16,6 +16,9 @@ When je click sur le bouton admin
 And je saisis le role souaite "<role>"
 And je click sur le bouton recherche
 Then je verifie les role affiches sur le tableau "<role>"
+When je clique sur le menu deroulant du profil
+And je click sur le bouton logout
+Then je dois être redirigé vers la page de connexion et "Login" doit s'afficher 
 
 Examples:
 |role|

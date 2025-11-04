@@ -45,11 +45,11 @@ public class RechercheByEmployeNameStepDef {
 	@Then("je verifie le employe name affiche sur le tableau {string}")
 	public void jeVerifieLeEmployeNameAfficheSurLeTableau(String resultatAttendu) {
 		
-		
-		
+	
 		try {
 			
 			List<String> resultatObtenu = RechercheByEmployeNamePage.getListEmployeName(driver);
+			
 			for (int i = 0; i < resultatObtenu.size(); i++) {
 			
 				Assert.assertEquals(resultatObtenu.get(i), resultatAttendu);

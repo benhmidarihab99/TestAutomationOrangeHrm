@@ -11,6 +11,10 @@ When je saisis le username "Admin"
 And je saisis le password "Admin123++*/"
 And je clique sur le bouton login
 Then je me redirige vers la page d'acceuil et "Dashboard" s'affiche
+When je clique sur le menu deroulant du profil
+And je click sur le bouton logout
+Then je dois être redirigé vers la page de connexion et "Login" doit s'afficher 
+
 
 @connexionInvalide
 Scenario Outline: Authentification avec des identifiants non valides
